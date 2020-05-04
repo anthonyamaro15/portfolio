@@ -2,12 +2,95 @@
   //   border: 1px solid red;
 
   #ProjectModal-btn {
-    width: 98%;
+    width: 335px;
+
+    //  height: 500px;
+    //  border: 1px solid red;
+    margin-bottom: 2rem;
 
     button {
       // border: 1px solid red;
       margin: 0;
       padding: 0;
+    }
+  }
+}
+
+#project-info {
+  .project-title {
+    text-transform: uppercase;
+    margin: 1rem 0 2rem;
+    //  text-align: center;
+    font-size: 0.9rem;
+    //  color: rgb(30, 77, 206);
+  }
+  #img-project {
+    //  border: 1px solid red;
+    img {
+      width: 100%;
+      // border: 1px solid red;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  }
+
+  .single-project-description {
+    //  border: 1px solid red;
+    margin-top: 2rem;
+    p {
+      font-size: 0.9rem;
+      font-weight: lighter;
+      margin-bottom: 2.5rem;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: rgb(30, 77, 206);
+    }
+
+    .tec-use {
+      // border: 1px solid blue;
+
+      h3 {
+        margin-bottom: 0.5rem 0;
+        color: rgb(30, 77, 206);
+
+        font-size: 1rem;
+      }
+    }
+
+    .page-btns {
+      // border: 1px solid red;
+
+      a {
+        //   border: 1px solid red;
+        padding: 0.2rem 1rem;
+        font-size: 0.9rem;
+        font-weight: lighter;
+        color: #333;
+        border: 1px solid grey;
+        border-radius: 4px;
+        text-transform: capitalize;
+
+        &:first-child {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+#btn-close {
+  button {
+    text-transform: capitalize;
+    font-weight: lighter;
+    border: 1px solid grey;
+    padding: 0.2rem 1rem;
+
+    &:hover {
+      background: none;
     }
   }
 }

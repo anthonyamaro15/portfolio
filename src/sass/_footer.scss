@@ -1,0 +1,33 @@
+.Footer {
+  //   border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+
+  width: 92%;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+
+  //   .madeby {
+  //     //  font-weight: bold;
+  //     //  font-weight: lighter;
+  //   }
+
+  nav {
+    a {
+      // border: 1px solid red;
+      padding: 0.3rem 0;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: rgb(30, 77, 206);
+      transition: border 0.3s ease-in-out;
+
+      &:hover {
+        border-bottom: 2px solid rgb(30, 77, 206);
+      }
+
+      &:first-child {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
