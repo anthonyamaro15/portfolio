@@ -1,0 +1,50 @@
+.Navbar {
+  //   border: 1px solid red;
+  display: flex;
+  justify-content: flex-end;
+  height: 5vh;
+  padding: 0 3rem;
+
+  .darkmode {
+    display: flex;
+    align-items: center;
+
+    .day-icon {
+      font-size: 1.1rem;
+      padding-top: 0.4rem;
+    }
+  }
+}
+
+.Header {
+  //   border: 1px solid red;
+  max-width: 1300px;
+  margin: 11rem auto;
+
+  .Header-wrapper {
+    width: 55%;
+
+    h1 {
+      margin-bottom: 12rem;
+      font-weight: lighter;
+      font-size: 2.5rem;
+      text-transform: capitalize;
+
+      .name {
+        font-weight: bold;
+      }
+    }
+
+    .email-me {
+      font-size: 1.2rem;
+
+      p {
+        span {
+          margin-left: 1rem;
+          border-bottom: 2px solid grey;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
