@@ -5,6 +5,8 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
+import sun from "../imgs/sunset.jpg";
+import { AiFillGithub } from "react-icons/ai";
 
 import SingleProject from "./SingleProject";
 
@@ -33,22 +35,37 @@ export default function AlertDialog() {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">
-          {"Use Google's location service?"}
-        </DialogTitle>
         <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-            Let Google help apps determine location. This means sending
-            anonymous location data to Google, even when no apps are running.
-          </DialogContentText>
+          <div id="project-info">
+            <div className="project-title">
+              <h3>project title</h3>
+            </div>
+            <div id="img-project">
+              <img src={sun} alt="sun" />
+            </div>
+
+            <div className="single-project-description">
+              <h3>Description</h3>
+              <p>description here</p>
+              <div className="tec-use">
+                <h3>technologies used</h3>
+                <p>list leng libraries used for this project</p>
+              </div>
+              <div className="page-btns">
+                <a href="www.google.com" target="_blank">
+                  github
+                </a>
+                <a href="#">website</a>
+              </div>
+            </div>
+          </div>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Disagree
-          </Button>
-          <Button onClick={handleClose} color="primary" autoFocus>
-            Agree
-          </Button>
+          <div id="btn-close">
+            <Button onClick={handleClose} autoFocus>
+              close
+            </Button>
+          </div>
         </DialogActions>
       </Dialog>
     </div>

@@ -5,7 +5,7 @@ const Content = () => {
   return (
     <div className="Content-container">
       <div className="aboutme-container">
-        <h3>about me</h3>
+        <h3 className="title-color">about me</h3>
         <p>
           I've been teaching myself to code since 2019 when I was working a full
           time job, I decided that I wanted to change carriers and{" "}
@@ -14,7 +14,7 @@ const Content = () => {
         </p>
       </div>
       <div className="Content-skills">
-        <h3 className="position-title">skills</h3>
+        <h3 className="title-color">skills</h3>
         <div className="skills-container">
           <div className="languages-wrapper">
             <div className="languages">
