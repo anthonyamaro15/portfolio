@@ -1,0 +1,115 @@
+.Content-container {
+  max-width: 850px;
+  margin: 0 auto;
+  //   border: 1px solid red;
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .aboutme-container {
+    //  border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12rem;
+
+    p {
+      width: 80%;
+      font-size: 0.9rem;
+      font-weight: lighter;
+      line-height: 1.6;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  .Content-skills {
+    //   border: 1px solid red;
+
+    display: flex;
+    justify-content: space-between;
+
+    .skills-container {
+      width: 80%;
+      //  border: 1px solid blue;
+
+      .languages-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12rem;
+
+        li {
+          font-size: 0.9rem;
+          font-weight: lighter;
+          margin-bottom: 0.3rem;
+        }
+      }
+    }
+  }
+
+  /// project content
+
+  .ProjectContent {
+    display: flex;
+    justify-content: space-between;
+    //  border: 1px solid red;
+    margin-bottom: 12rem;
+
+    .ProjectContent-display {
+      width: 80%;
+      // border: 1px solid blue;
+      display: flex;
+      justify-content: space-between;
+      .side-one {
+        //   width: 48%;
+        //   width: 99%;
+        //   height: 100%;
+        position: relative;
+        cursor: pointer;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 4px;
+        }
+
+        .toggle-name {
+          position: absolute;
+          top: 0;
+          //  left: 50;
+          //  bottom: 3%;
+          background: rgba(0, 0, 0, 0.7);
+          width: 100%;
+          height: 97%;
+          //  text-align: center;
+          padding: 0.7rem 0;
+          text-transform: capitalize;
+          opacity: 0;
+          //  font-size: 1.1rem;
+          font-weight: lighter;
+          border-radius: 4px;
+          transition: opacity 0.3s ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          //  transform: translateX(-50%);
+          color: white;
+          text-transform: uppercase;
+          //  font-weight: bold;
+        }
+        &:hover {
+          .toggle-name {
+            opacity: 1;
+            // background: red;
+            // background: rbga(0, 0, 0, 0.9);
+            // z-index: 100;
+          }
+        }
+      }
+    }
+  }
+}
