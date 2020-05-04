@@ -16,6 +16,10 @@
   }
 }
 
+.wrapper {
+  //   border: 1px solid red;
+  height: 81vh;
+}
 .Header {
   //   border: 1px solid red;
   max-width: 1300px;
@@ -28,10 +32,11 @@
       margin-bottom: 12rem;
       font-weight: lighter;
       font-size: 2.5rem;
-      text-transform: capitalize;
+      // text-transform: capitalize;
 
       .name {
         font-weight: bold;
+        text-transform: capitalize;
       }
     }
 
@@ -41,7 +46,7 @@
       p {
         span {
           margin-left: 1rem;
-          border-bottom: 2px solid grey;
+          border-bottom: 2px solid rgb(39, 80, 214);
           cursor: pointer;
         }
       }
