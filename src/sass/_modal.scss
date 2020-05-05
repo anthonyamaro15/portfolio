@@ -3,9 +3,10 @@
 
   #ProjectModal-btn {
     width: 335px;
+    //  height: 300px;
 
     //  height: 500px;
-    //  border: 1px solid red;
+
     margin-bottom: 2rem;
 
     button {
@@ -31,6 +32,7 @@
     img {
       width: 100%;
       // border: 1px solid red;
+      height: 320px;
       object-fit: cover;
       border-radius: 4px;
     }

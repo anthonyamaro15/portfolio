@@ -1,12 +1,11 @@
 import React from "react";
-import sun from "../imgs/sunset.jpg";
 
-const SingleProject = () => {
+const SingleProject = ({ project }) => {
   return (
     <div className="side-one">
-      <img src={sun} alt="sunset" />
+      <img src={project.image} alt={project.name} />
       <div className="toggle-name">
-        <p>project name</p>
+        <p>{project.name}</p>
       </div>
     </div>
   );
