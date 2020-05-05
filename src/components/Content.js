@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectContent from "./ProjectContent";
 
-const Content = () => {
+const Content = ({ state }) => {
   return (
     <div className="Content-container">
       <div className="aboutme-container">
@@ -27,13 +27,21 @@ const Content = () => {
               </ul>
             </div>
             <div className="frameworks">
-              <h3>frameworks/libraries</h3>
+              <h3>frameworks</h3>
               <ul>
-                <li>react</li>
                 <li>Redux</li>
                 <li>node</li>
                 <li>express</li>
+              </ul>
+            </div>
+            <div className="frameworks">
+              <h3>libraries</h3>
+              <ul>
+                <li>react</li>
+                <li>express</li>
                 <li>knex JS</li>
+                <li>axios</li>
+                <li>react router</li>
               </ul>
             </div>
             <div className="tools">
@@ -48,7 +56,7 @@ const Content = () => {
         </div>
       </div>
 
-      <ProjectContent />
+      <ProjectContent state={state} />
     </div>
   );
 };

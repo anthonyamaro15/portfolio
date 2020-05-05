@@ -3,9 +3,10 @@
 
   #ProjectModal-btn {
     width: 335px;
+    //  height: 300px;
 
     //  height: 500px;
-    //  border: 1px solid red;
+
     margin-bottom: 2rem;
 
     button {
@@ -17,10 +18,12 @@
 }
 
 #project-info {
+  padding: 2rem;
+
   .project-title {
     text-transform: uppercase;
     margin: 1rem 0 2rem;
-    //  text-align: center;
+
     font-size: 0.9rem;
     //  color: rgb(30, 77, 206);
   }
@@ -29,6 +32,7 @@
     img {
       width: 100%;
       // border: 1px solid red;
+      height: 320px;
       object-fit: cover;
       border-radius: 4px;
     }
@@ -48,6 +52,7 @@
       font-size: 1rem;
       margin-bottom: 0.5rem;
       color: rgb(30, 77, 206);
+      color: $blue;
     }
 
     .tec-use {
@@ -56,6 +61,7 @@
       h3 {
         margin-bottom: 0.5rem 0;
         color: rgb(30, 77, 206);
+        color: $blue;
 
         font-size: 1rem;
       }
@@ -69,7 +75,7 @@
         padding: 0.2rem 1rem;
         font-size: 0.9rem;
         font-weight: lighter;
-        color: #333;
+        //   color: #333;
         border: 1px solid grey;
         border-radius: 4px;
         text-transform: capitalize;
@@ -83,11 +89,22 @@
 }
 
 #btn-close {
+  //   background: red;
+  display: flex;
+  justify-content: flex-end;
+  //   border: 1px solid red;
+
+  padding: 0 2rem 2rem;
   button {
     text-transform: capitalize;
     font-weight: lighter;
     border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 1rem;
     padding: 0.2rem 1rem;
+    background: none;
+    outline: none;
+    cursor: pointer;
 
     &:hover {
       background: none;

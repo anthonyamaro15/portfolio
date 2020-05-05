@@ -19,6 +19,20 @@
 .wrapper {
   //   border: 1px solid red;
   height: 81vh;
+
+  .goup {
+    //  border: 1px solid red;
+    font-size: 1.8rem;
+    position: fixed;
+    cursor: pointer;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+  }
+
+  .showHand {
+    display: block;
+  }
 }
 .Header {
   //   border: 1px solid red;
@@ -47,6 +61,7 @@
         span {
           margin-left: 1rem;
           border-bottom: 2px solid rgb(30, 77, 206);
+          border-bottom: 2px solid $blue;
           cursor: pointer;
         }
       }

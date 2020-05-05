@@ -1,14 +1,15 @@
 import React from "react";
-import sun from "../imgs/sunset.jpg";
 import ProjectModal from "./ProjectModal";
+import { portfolioData } from "../porfolioData";
 
-const ProjectContent = () => {
+const ProjectContent = ({ state }) => {
   return (
     <div className="ProjectContent">
       <h3 className="title-color">projects</h3>
       <div className="ProjectContent-display">
-        <ProjectModal />
-        <ProjectModal />
+        {portfolioData.map((project) => (
+          <ProjectModal key={project.site} project={project} state={state} />
+        ))}
       </div>
     </div>
   );

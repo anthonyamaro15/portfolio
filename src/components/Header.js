@@ -1,11 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Header = () => {
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 1000) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+
+      if (window.scrollY < 750) {
+        setScrolling(false);
+      }
+    });
+  }, []);
+
+  const isUserScrolling = scrolling ? "showHand goup" : "goup";
   return (
     <div className="wrapper">
       <div className="Header">
         <div className="Header-wrapper">
-          <h1>Hello</h1>
+          <h1>
+            Hello!{" "}
+            <span
+              role="img"
+              aria-label="wanted to say hi to whoever visit my webpage"
+            >
+              ✋
+            </span>{" "}
+          </h1>
 
           <div className="aboutme">
             <h1>
@@ -21,6 +46,13 @@ const Header = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className={isUserScrolling}>
+        <a href="#top">
+          <span role="img" aria-label="go to top">
+            👆
+          </span>
+        </a>
       </div>
     </div>
   );

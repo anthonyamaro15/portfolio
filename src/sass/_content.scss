@@ -4,7 +4,7 @@
   //   border: 1px solid red;
 
   .title-color {
-    color: rgb(30, 77, 206);
+    color: $blue;
   }
 
   h3 {
@@ -78,7 +78,7 @@
 
         img {
           width: 100%;
-          //  height: 250px;
+          height: 200px;
           object-fit: cover;
           border-radius: 4px;
         }
