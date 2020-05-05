@@ -1,7 +1,6 @@
 .Content-container {
   max-width: 870px;
   margin: 0 auto;
-  //   border: 1px solid red;
   padding: 0 1rem;
 
   @media (max-width: $mobile) {
@@ -22,9 +21,7 @@
   }
 
   .aboutme-container {
-    //  border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
+    @include flex(space-between);
     margin-bottom: 12rem;
 
     @media (max-width: $lg-mobile) {
@@ -43,17 +40,14 @@
       margin-bottom: 8rem;
       margin-top: 10rem;
     }
-    //  @media (max-width: $extra-sm) {
-    //    margin-top: 20rem;
-    //  }
 
     p {
       width: 80%;
       font-size: 0.9rem;
       font-weight: lighter;
       line-height: 1.6;
+
       @media (max-width: $lg-mobile) {
-        //   border: 1px solid red;
         width: 85%;
         margin: 1rem auto 0;
       }
@@ -64,10 +58,7 @@
     }
   }
   .Content-skills {
-    //  border: 1px solid red;
-
-    display: flex;
-    justify-content: space-between;
+    @include flex(space-between);
 
     @media (max-width: $lg-mobile) {
       flex-direction: column;
@@ -75,7 +66,7 @@
 
     .skills-container {
       width: 80%;
-      // border: 1px solid blue;
+
       @media (max-width: $lg-mobile) {
         width: 85%;
         margin: 1rem auto 0;
@@ -84,21 +75,18 @@
       .shared-width {
         @media (max-width: $lg-mobile) {
           width: 45%;
-          //  border: 1px solid red;
         }
       }
 
       .languages,
       .frameworks {
         @media (max-width: $lg-mobile) {
-          //  border: 1px solid red;
           margin-bottom: 1rem;
         }
       }
 
       .languages-wrapper {
-        display: flex;
-        justify-content: space-between;
+        @include flex(space-between);
         margin-bottom: 12rem;
 
         @media (max-width: $lg-mobile) {
@@ -121,9 +109,7 @@
   /// project content
 
   .ProjectContent {
-    display: flex;
-    justify-content: space-between;
-    //  border: 1px solid red;
+    @include flex(space-between);
     margin-bottom: 12rem;
 
     @media (max-width: $lg-mobile) {
@@ -136,9 +122,7 @@
 
     .ProjectContent-display {
       width: 80%;
-      // border: 1px solid blue;
-      display: flex;
-      justify-content: space-between;
+      @include flex(space-between);
       flex-wrap: wrap;
 
       @media (max-width: $lg-mobile) {
@@ -146,10 +130,6 @@
         margin: 1rem auto 0;
       }
       .side-one {
-        //   width: 48%;
-        //   width: 99%;
-        //   height: 100%;
-        //   margin-bottom: 3rem;
         position: relative;
         cursor: pointer;
 
@@ -161,40 +141,29 @@
 
           @media (max-width: $sm-mobile) {
             width: 220px;
-            // height: 180px;
           }
         }
 
         .toggle-name {
           position: absolute;
           top: 0;
-          //  left: 50;
-          //  bottom: 3%;
           background: rgba(0, 0, 0, 0.7);
           width: 100%;
           height: 97%;
-          //  text-align: center;
           padding: 0.7rem 0;
           text-transform: capitalize;
           opacity: 0;
-          //  font-size: 1.1rem;
           font-weight: lighter;
           border-radius: 4px;
           transition: opacity 0.3s ease;
-          display: flex;
+          @include flex(center);
           align-items: center;
-          justify-content: center;
-          //  transform: translateX(-50%);
-          color: white;
+          color: $white;
           text-transform: uppercase;
-          //  font-weight: bold;
         }
         &:hover {
           .toggle-name {
             opacity: 1;
-            // background: red;
-            // background: rbga(0, 0, 0, 0.9);
-            // z-index: 100;
           }
         }
       }
