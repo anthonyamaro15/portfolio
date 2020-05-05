@@ -4,7 +4,15 @@
   #ProjectModal-btn {
     width: 335px;
     //  height: 300px;
+    @media (max-width: $sm-mobile) {
+      width: 220px;
+      height: 170px;
+    }
 
+    @media (max-width: $tablet) {
+      width: 270px;
+      height: 180px;
+    }
     //  height: 500px;
 
     margin-bottom: 2rem;
@@ -35,6 +43,10 @@
       height: 320px;
       object-fit: cover;
       border-radius: 4px;
+
+      @media (max-width: $sm-mobile) {
+        height: 200px;
+      }
     }
   }
 
@@ -82,6 +94,10 @@
 
         &:first-child {
           margin-right: 0.5rem;
+        }
+
+        &:visited {
+          color: #afafbf;
         }
       }
     }

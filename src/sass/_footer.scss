@@ -7,7 +7,26 @@
   margin: 0 auto;
   padding: 3rem 0rem 4rem;
 
+  @media (max-width: $lg-mobile) {
+    //  padding: 0 2rem;
+    flex-direction: column;
+  }
+
+  @media (max-width: $mobile) {
+    //  padding: 0 2rem;
+    width: 85%;
+    padding: 2rem 0;
+  }
+
+  @media (max-width: $sm-mobile) {
+    width: 80%;
+  }
+
   nav {
+    @media (max-width: $lg-mobile) {
+      margin-top: 1rem;
+      text-align: center;
+    }
     a {
       // border: 1px solid red;
       padding: 0.3rem 0;

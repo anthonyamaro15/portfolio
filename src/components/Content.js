@@ -17,7 +17,7 @@ const Content = ({ state }) => {
         <h3 className="title-color">skills</h3>
         <div className="skills-container">
           <div className="languages-wrapper">
-            <div className="languages">
+            <div className="languages shared-width">
               <h3>languages</h3>
               <ul>
                 <li>javaScript + (ES6)</li>
@@ -26,7 +26,7 @@ const Content = ({ state }) => {
                 <li>SQL</li>
               </ul>
             </div>
-            <div className="frameworks">
+            <div className="frameworks shared-width">
               <h3>frameworks</h3>
               <ul>
                 <li>Redux</li>
@@ -34,7 +34,7 @@ const Content = ({ state }) => {
                 <li>express</li>
               </ul>
             </div>
-            <div className="frameworks">
+            <div className="libraries shared-width">
               <h3>libraries</h3>
               <ul>
                 <li>react</li>
@@ -44,7 +44,7 @@ const Content = ({ state }) => {
                 <li>react router</li>
               </ul>
             </div>
-            <div className="tools">
+            <div className="tools shared-width">
               <h3>tools</h3>
               <ul>
                 <li>postman</li>
