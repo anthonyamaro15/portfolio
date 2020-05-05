@@ -5,7 +5,7 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY >= 1000) {
+      if (window.scrollY >= 800) {
         setScrolling(true);
       } else {
         setScrolling(false);

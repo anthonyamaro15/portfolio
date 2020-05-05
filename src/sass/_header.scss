@@ -3,7 +3,10 @@
   display: flex;
   justify-content: flex-end;
   height: 5vh;
-  padding: 0 3rem;
+  padding: 0 2rem;
+  @media (max-width: $sm-mobile) {
+    padding: 0 1rem;
+  }
 
   .darkmode {
     display: flex;
@@ -17,8 +20,12 @@
 }
 
 .wrapper {
-  //   border: 1px solid red;
+  //   border: 1px solid blue;
   height: 81vh;
+
+  @media (max-width: $sm-mobile) {
+    height: 100vh;
+  }
 
   .goup {
     //  border: 1px solid red;
@@ -28,6 +35,10 @@
     right: 1rem;
     bottom: 1rem;
     display: none;
+
+    @media (max-width: $lg-mobile) {
+      font-size: 1.5rem;
+    }
   }
 
   .showHand {
@@ -39,14 +50,58 @@
   max-width: 1300px;
   margin: 11rem auto;
 
+  @media (max-width: $desktop) {
+    max-width: 1000px;
+    //  padding: 0 1rem;
+  }
+
+  @media (max-width: $med-desktop) {
+    max-width: 700px;
+    padding: 0 4rem;
+  }
+
+  @media (max-width: $sm-mobile) {
+    margin: 8rem 0;
+  }
+
+  @media (max-width: $sm-mobile) {
+    margin: 8rem 0;
+  }
+
+  @media (max-width: $extra-sm) {
+    margin: 5rem auto;
+  }
+
   .Header-wrapper {
     width: 55%;
+    //  border: 1px solid blue;
+    @media (max-width: $desktop) {
+      width: 80%;
+    }
+    @media (max-width: $med-desktop) {
+      width: 100%;
+    }
 
     h1 {
       margin-bottom: 12rem;
       font-weight: lighter;
       font-size: 2.5rem;
       // text-transform: capitalize;
+
+      @media (max-width: $med-desktop) {
+        font-size: 2rem;
+      }
+
+      @media (max-width: $mobile) {
+        font-size: 1.6rem;
+      }
+
+      @media (max-width: $sm-mobile) {
+        margin-bottom: 8rem;
+      }
+      @media (max-width: $extra-sm) {
+        font-size: 1.4rem;
+      }
 
       .name {
         font-weight: bold;
@@ -56,6 +111,12 @@
 
     .email-me {
       font-size: 1.2rem;
+      @media (max-width: $med-desktop) {
+        font-size: 1.1rem;
+      }
+      @media (max-width: $med-desktop) {
+        font-size: 0.9rem;
+      }
 
       p {
         span {
@@ -63,6 +124,9 @@
           border-bottom: 2px solid rgb(30, 77, 206);
           border-bottom: 2px solid $blue;
           cursor: pointer;
+          @media (max-width: $med-desktop) {
+            margin-left: 0.5rem;
+          }
         }
       }
     }

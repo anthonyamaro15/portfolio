@@ -1,7 +1,12 @@
 .Content-container {
-  max-width: 850px;
+  max-width: 870px;
   margin: 0 auto;
   //   border: 1px solid red;
+  padding: 0 1rem;
+
+  @media (max-width: $mobile) {
+    padding: 0 3rem;
+  }
 
   .title-color {
     color: $blue;
@@ -11,6 +16,9 @@
     text-transform: uppercase;
     font-size: 1rem;
     margin-bottom: 0.7rem;
+    @media (max-width: $extra-sm) {
+      font-size: 0.9rem;
+    }
   }
 
   .aboutme-container {
@@ -19,11 +27,36 @@
     justify-content: space-between;
     margin-bottom: 12rem;
 
+    @media (max-width: $lg-mobile) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $sm-mobile) {
+      margin-top: 15rem;
+    }
+
+    @media (max-width: $tablet) {
+      margin-top: 15rem;
+    }
+
+    @media (max-width: $sm-mobile) {
+      margin-bottom: 8rem;
+      margin-top: 10rem;
+    }
+    //  @media (max-width: $extra-sm) {
+    //    margin-top: 20rem;
+    //  }
+
     p {
       width: 80%;
       font-size: 0.9rem;
       font-weight: lighter;
       line-height: 1.6;
+      @media (max-width: $lg-mobile) {
+        //   border: 1px solid red;
+        width: 85%;
+        margin: 1rem auto 0;
+      }
 
       span {
         font-weight: bold;
@@ -31,19 +64,50 @@
     }
   }
   .Content-skills {
-    //   border: 1px solid red;
+    //  border: 1px solid red;
 
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: $lg-mobile) {
+      flex-direction: column;
+    }
+
     .skills-container {
       width: 80%;
-      //  border: 1px solid blue;
+      // border: 1px solid blue;
+      @media (max-width: $lg-mobile) {
+        width: 85%;
+        margin: 1rem auto 0;
+      }
+
+      .shared-width {
+        @media (max-width: $lg-mobile) {
+          width: 45%;
+          //  border: 1px solid red;
+        }
+      }
+
+      .languages,
+      .frameworks {
+        @media (max-width: $lg-mobile) {
+          //  border: 1px solid red;
+          margin-bottom: 1rem;
+        }
+      }
 
       .languages-wrapper {
         display: flex;
         justify-content: space-between;
         margin-bottom: 12rem;
+
+        @media (max-width: $lg-mobile) {
+          flex-wrap: wrap;
+        }
+
+        @media (max-width: $sm-mobile) {
+          margin-bottom: 8rem;
+        }
 
         li {
           font-size: 0.9rem;
@@ -62,12 +126,25 @@
     //  border: 1px solid red;
     margin-bottom: 12rem;
 
+    @media (max-width: $lg-mobile) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $sm-mobile) {
+      margin-bottom: 8rem;
+    }
+
     .ProjectContent-display {
       width: 80%;
       // border: 1px solid blue;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+
+      @media (max-width: $lg-mobile) {
+        width: 85%;
+        margin: 1rem auto 0;
+      }
       .side-one {
         //   width: 48%;
         //   width: 99%;
@@ -81,6 +158,11 @@
           height: 200px;
           object-fit: cover;
           border-radius: 4px;
+
+          @media (max-width: $sm-mobile) {
+            width: 220px;
+            // height: 180px;
+          }
         }
 
         .toggle-name {
