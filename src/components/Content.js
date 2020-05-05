@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectContent from "./ProjectContent";
 
-const Content = () => {
+const Content = ({ state }) => {
   return (
     <div className="Content-container">
       <div className="aboutme-container">
@@ -48,7 +48,7 @@ const Content = () => {
         </div>
       </div>
 
-      <ProjectContent />
+      <ProjectContent state={state} />
     </div>
   );
 };

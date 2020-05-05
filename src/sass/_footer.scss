@@ -19,10 +19,12 @@
       text-transform: uppercase;
       font-weight: bold;
       color: rgb(30, 77, 206);
+      color: $blue;
       transition: border 0.3s ease-in-out;
 
       &:hover {
         border-bottom: 2px solid rgb(30, 77, 206);
+        color: $blue;
       }
 
       &:first-child {
