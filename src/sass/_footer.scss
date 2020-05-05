@@ -1,19 +1,15 @@
 .Footer {
-  //   border: 1px solid red;
-  display: flex;
-  justify-content: space-between;
+  @include flex(space-between);
 
   width: 92%;
   margin: 0 auto;
   padding: 3rem 0rem 4rem;
 
   @media (max-width: $lg-mobile) {
-    //  padding: 0 2rem;
     flex-direction: column;
   }
 
   @media (max-width: $mobile) {
-    //  padding: 0 2rem;
     width: 85%;
     padding: 2rem 0;
   }
@@ -28,19 +24,11 @@
       text-align: center;
     }
     a {
-      // border: 1px solid red;
       padding: 0.3rem 0;
       text-transform: uppercase;
       font-weight: bold;
-      color: rgb(30, 77, 206);
       color: $blue;
       font-size: 0.9rem;
-      transition: border 0.3s ease-in-out;
-
-      &:hover {
-        //   border-bottom: 2px solid rgb(30, 77, 206);
-        color: $blue;
-      }
 
       &:first-child {
         margin-right: 2rem;
