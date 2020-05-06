@@ -49,6 +49,10 @@
     max-width: 1000px;
   }
 
+  @media (max-width: $fix-header) {
+    max-width: 800px;
+  }
+
   @media (max-width: $med-desktop) {
     max-width: 700px;
     padding: 0 4rem;
