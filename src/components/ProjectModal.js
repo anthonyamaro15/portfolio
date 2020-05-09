@@ -1,14 +1,13 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
-import demo from "../videos/demo.mov";
 
 import SingleProject from "./SingleProject";
 
 export default function AlertDialog({ state, project }) {
   const [open, setOpen] = React.useState(false);
   // open === false => darkmode
-  const { name, description, github, image, site, tech_used } = project;
+  const { name, description, github, image, site, tech_used, video } = project;
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -43,7 +42,7 @@ export default function AlertDialog({ state, project }) {
             <h3>{name}</h3>
           </div>
           <div id="img-project">
-            <video src={demo} autoPlay loop></video>
+            <video src={video} autoPlay loop></video>
             {/**
             <img src={image} alt="sun" />
             */}

@@ -42,7 +42,11 @@ const Header = () => {
 
           <div className="email-me">
             <p>
-              Email me <span>anthonyamaro5555@gmail.com</span>
+              Email me
+              <a href="mailto:anthonyamaro5555@gmail.com">
+                {" "}
+                <span>anthonyamaro5555@gmail.com</span>
+              </a>
             </p>
           </div>
         </div>
