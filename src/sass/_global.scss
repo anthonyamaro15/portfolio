@@ -25,6 +25,9 @@ span {
 
 .Parent-wrapper {
   color: #333;
+  a {
+    color: #333;
+  }
 }
 
 .dark-mode {
@@ -32,6 +35,9 @@ span {
   //   background: #031122;
 
   color: $white;
+  a {
+    color: $white;
+  }
 
   .Header-wrapper {
     .aboutme {
