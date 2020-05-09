@@ -57,13 +57,16 @@
     max-width: 700px;
     padding: 0 4rem;
   }
+  @media (max-width: $mobile) {
+    margin: 6rem auto 0;
+  }
 
-  @media (max-width: $sm-mobile) {
-    margin: 8rem 0;
+  @media (max-width: $tablet) {
+    margin: 4rem auto;
   }
 
   @media (max-width: $sm-mobile) {
-    margin: 8rem 0;
+    margin: 3rem 0;
   }
 
   @media (max-width: $extra-sm) {
@@ -86,6 +89,11 @@
 
       @media (max-width: $med-desktop) {
         font-size: 2rem;
+        margin: 9rem auto;
+      }
+
+      @media (max-width: $tablet) {
+        margin-bottom: 2rem;
       }
 
       @media (max-width: $mobile) {
@@ -93,7 +101,7 @@
       }
 
       @media (max-width: $sm-mobile) {
-        margin-bottom: 8rem;
+        margin-bottom: 3rem;
       }
       @media (max-width: $extra-sm) {
         font-size: 1.4rem;

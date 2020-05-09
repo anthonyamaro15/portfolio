@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
+import demo from "../videos/demo.mov";
 
 import SingleProject from "./SingleProject";
 
@@ -42,7 +43,10 @@ export default function AlertDialog({ state, project }) {
             <h3>{name}</h3>
           </div>
           <div id="img-project">
+            <video src={demo} autoPlay loop></video>
+            {/**
             <img src={image} alt="sun" />
+            */}
           </div>
 
           <div className="single-project-description">

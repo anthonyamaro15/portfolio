@@ -30,14 +30,32 @@
     font-size: 0.9rem;
   }
   #img-project {
-    img {
+    // change here
+    video {
       width: 100%;
-      height: 320px;
+      height: 440px;
+
       object-fit: cover;
       border-radius: 4px;
 
       @media (max-width: $sm-mobile) {
         height: 200px;
+        object-fit: fill;
+      }
+
+      @media (max-width: $mobile) {
+        height: 300px;
+      }
+      @media (max-width: $sm-mobile) {
+        height: 190px;
+        object-fit: cover;
+      }
+      @media (max-width: $tablet) {
+        height: 230px;
+      }
+
+      @media (max-width: $extra-sm) {
+        height: 170px;
       }
     }
   }
