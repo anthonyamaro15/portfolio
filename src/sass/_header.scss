@@ -23,8 +23,11 @@
   @media (max-width: $lg-mobile) {
     height: 60vh;
   }
+  @media (max-width: $tablet) {
+    height: 95vh;
+  }
   @media (max-width: $sm-mobile) {
-    height: 100vh;
+    height: 95vh;
   }
 
   .goup {
