@@ -42,10 +42,11 @@ export default function AlertDialog({ state, project }) {
             <h3>{name}</h3>
           </div>
           <div id="img-project">
-            <video src={video} autoPlay loop></video>
-            {/**
-            <img src={image} alt="sun" />
-            */}
+            {video ? (
+              <video src={video} autoPlay loop></video>
+            ) : (
+              <img src={image} alt="sun" />
+            )}
           </div>
 
           <div className="single-project-description">

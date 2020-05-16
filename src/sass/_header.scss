@@ -20,6 +20,9 @@
 .wrapper {
   height: 81vh;
 
+  @media (max-width: $lg-mobile) {
+    height: 60vh;
+  }
   @media (max-width: $sm-mobile) {
     height: 100vh;
   }
@@ -44,6 +47,7 @@
 .Header {
   max-width: 1300px;
   margin: 11rem auto;
+  //   border: 1px solid red;
 
   @media (max-width: $desktop) {
     max-width: 1000px;
