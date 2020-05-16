@@ -7,8 +7,8 @@ const ProjectContent = ({ state }) => {
     <div className="ProjectContent">
       <h3 className="title-color">projects</h3>
       <div className="ProjectContent-display">
-        {portfolioData.map((project) => (
-          <ProjectModal key={project.site} project={project} state={state} />
+        {portfolioData.map((project, i) => (
+          <ProjectModal key={i} project={project} state={state} />
         ))}
       </div>
     </div>

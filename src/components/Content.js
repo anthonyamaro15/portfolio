@@ -24,6 +24,7 @@ const Content = ({ state }) => {
                 <li>HTML</li>
                 <li>CSS/Sass/Less</li>
                 <li>SQL</li>
+                <li>PostgreSQL</li>
               </ul>
             </div>
             <div className="frameworks shared-width">
@@ -31,17 +32,19 @@ const Content = ({ state }) => {
               <ul>
                 <li>Redux</li>
                 <li>node</li>
-                <li>express</li>
+                <li>Express</li>
               </ul>
             </div>
             <div className="libraries shared-width">
               <h3>libraries</h3>
               <ul>
-                <li>react</li>
-                <li>express</li>
+                <li>React</li>
+
                 <li>knex JS</li>
                 <li>axios</li>
-                <li>react router</li>
+                <li>React router</li>
+                <li>Formik</li>
+                <li>React hook forms</li>
               </ul>
             </div>
             <div className="tools shared-width">
@@ -50,6 +53,7 @@ const Content = ({ state }) => {
                 <li>postman</li>
                 <li>git & github</li>
                 <li>chrome devTools</li>
+                <li>terminal</li>
               </ul>
             </div>
           </div>
