@@ -43,7 +43,7 @@ export default function AlertDialog({ state, project }) {
           </div>
           <div id="img-project">
             {video ? (
-              <video src={video} autoPlay loop></video>
+              <video src={video} autoPlay loop poster={image}></video>
             ) : (
               <img src={image} alt="sun" />
             )}

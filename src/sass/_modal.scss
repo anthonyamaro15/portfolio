@@ -109,9 +109,10 @@
   @include flex(flex-end);
 
   padding: 0 2rem 2rem;
+
   button {
     text-transform: capitalize;
-    font-weight: lighter;
+    font-weight: 300;
     border: 1px solid grey;
     border-radius: 4px;
     font-size: 1rem;
@@ -119,6 +120,7 @@
     background: none;
     outline: none;
     cursor: pointer;
+    color: $dark-white;
 
     &:hover {
       background: none;
