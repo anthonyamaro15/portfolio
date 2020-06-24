@@ -20,7 +20,12 @@ export default function AlertDialog({ state, project }) {
   return (
     <div id="ProjectModal">
       <div id="ProjectModal-btn">
-        <Button onClick={handleClickOpen}>
+        <Button
+          onClick={handleClickOpen}
+          style={{
+            border: `${state ? "none" : "1px solid rgb(221, 218, 218)"}`,
+          }}
+        >
           <SingleProject project={project} />
         </Button>
       </div>
