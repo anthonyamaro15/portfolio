@@ -7,10 +7,12 @@ const Content = ({ state }) => {
       <div className="aboutme-container">
         <h3 className="title-color">about me</h3>
         <p>
-          I've been teaching myself to code since 2019 when I was working a full
-          time job, I decided that I wanted to change carriers and{" "}
-          <span>become a software engineer</span> that is one of the reason I
-          decided to join <span>Lambda School</span>.{" "}
+          I've been teaching myself to code since 2018, when I was working a
+          full time job working 70+ hrs a week when I decided that I wanted to
+          change carriers and become a <span> software engineer</span>. Learning
+          new technologies has always been my passion,{" "}
+          <span>solving problems</span> is what I love the most and that is one
+          of the reason I decided to join <span>Lambda School</span>.{" "}
         </p>
       </div>
       <div className="Content-skills">
@@ -66,3 +68,6 @@ const Content = ({ state }) => {
 };
 
 export default Content;
+
+// my passion is always learning new technologies while solving problems is my favorite part
+//

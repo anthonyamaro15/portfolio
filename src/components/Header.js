@@ -36,7 +36,7 @@ const Header = () => {
             <h1>
               My name is <span className="name">anthony amaro</span>, I'm
               currently a Full Stack Developer Student at Lambda School, I spend
-              most of the time doing what I love which is learning to code.
+              most of the time doing what I love to do.
             </h1>
           </div>
 
