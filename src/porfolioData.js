@@ -7,6 +7,9 @@ import anywhereVideo from "./videos/fitness.mov";
 import tmovieImg from "./imgs/tmovie.png";
 import tmovieVideo from "./videos/tmovie.mov";
 
+import gameImg from "./imgs/gameoflife.png";
+import gameVideo from "./videos/gameoflifeVideo.mov";
+
 // 1423px;
 export const portfolioData = [
   {
@@ -14,8 +17,8 @@ export const portfolioData = [
     image: `${tmovieImg}`,
     video: `${tmovieVideo}`,
     description:
-      "This is a project that I worked on a weekend when i learned how to work with databases on the back end. So decided to make this project to practice everthing that i've learned so far. This is a full stack application that displays movies information using the Movie database API. It shows the trailer of the movie and its information",
-    tech_used: ` SASS, JavaScript, React, React form hooks, React Router, axios,  Redux hooks,  Node JS, Express, bcryptjs, jsonwebtoken, PostgreSQL, Heroku`,
+      "This is a project that I worked on a weekend when i learned how to work with databases on the back end. So decided to make this project to practice everthing that i've learned so far. This is a full stack application that displays movies information using the Movie database API. It shows the trailer of the movie and its information, mobile friendly, and can download the app on mobile or desktop",
+    tech_used: ` SASS, JavaScript, React, React form hooks, React Router, axios,  Redux hooks, Progressive Wep Application (PWA),  Node JS, Express, bcryptjs, jsonwebtoken, PostgreSQL, Heroku`,
 
     github: "https://github.com/anthonyamaro15/netflix-clone",
     site: "https://tmovies.netlify.app",
@@ -30,6 +33,16 @@ export const portfolioData = [
       "SASS, JavaScript, React, React form hooks, React Router, axios, Redux hooks, Stripe",
     github: "https://github.com/Fitness-Anywhere/App",
     site: "https://fitness-anywhere.herokuapp.com/",
+  },
+  {
+    name: "Conways Game of Life",
+    image: `${gameImg}`,
+    video: `${gameVideo}`,
+    description:
+      "Conways Game of Life is my Computer Science project, I built this game for having and understanding the importance of Data Structors and Algorightms. Each round of the simulation examines the current state fo the grid, and then produces an entirely new grid consisting of the old state. Rules are if a cell has 2 or 3 neighbours, it remains alive, otherwise it dies, or if the cell is dead and has exactly 3 neighbours, then it comes to life, otherwise it remians dead. You can download this game on desktop or mobile.",
+    tech_used: "SASS, JavaScript and React, Progressive Web Application (PWA)",
+    github: "https://github.com/anthonyamaro15/game-of-life-BW",
+    site: "https://game-of-life-bw.vercel.app/",
   },
   {
     name: "spotify landing page",

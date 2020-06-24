@@ -7,7 +7,7 @@ const Footer = () => {
 
       <nav>
         <a
-          href="https://www.linkedin.com/in/anthony-amaro-04b2401a9/"
+          href="https://www.linkedin.com/in/anthonyamaro15/"
           target="_blank"
           rel="noopener noreferrer"
         >
