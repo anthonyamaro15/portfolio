@@ -34,9 +34,8 @@ const Header = () => {
 
           <div className="aboutme">
             <h1>
-              My name is <span className="name">anthony amaro</span>, I'm
-              currently a Full Stack Developer Student at Lambda School, I spend
-              most of the time doing what I love to do.
+              My name is <span className="name">anthony amaro</span>, I'm a Full
+              Stack Developer, I spend most of the time doing what I love to do.
             </h1>
           </div>
 
