@@ -40,7 +40,7 @@ export const portfolioData = [
     video: `${gameVideo}`,
     description:
       "Conways Game of Life is my Computer Science project, I built this game for having and understanding the importance of Data Structors and Algorightms. Each round of the simulation examines the current state fo the grid, and then produces an entirely new grid consisting of the old state. Rules are if a cell has 2 or 3 neighbours, it remains alive, otherwise it dies, or if the cell is dead and has exactly 3 neighbours, then it comes to life, otherwise it remians dead. You can download this game on desktop or mobile.",
-    tech_used: "SASS, JavaScript and React, Progressive Web Application (PWA)",
+    tech_used: "SASS, JavaScript, React and Progressive Web Application (PWA)",
     github: "https://github.com/anthonyamaro15/game-of-life-BW",
     site: "https://game-of-life-bw.vercel.app/",
   },
