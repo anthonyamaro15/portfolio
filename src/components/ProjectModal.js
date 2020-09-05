@@ -7,7 +7,7 @@ import SingleProject from "./SingleProject";
 export default function AlertDialog({ state, project }) {
   const [open, setOpen] = React.useState(false);
   // open === false => darkmode
-  const { name, description, github, image, site, tech_used, video } = project;
+  const { name, description, github, image, site, tech_used } = project;
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -47,19 +47,41 @@ export default function AlertDialog({ state, project }) {
             <h3>{name}</h3>
           </div>
           <div id="img-project">
-            {video ? (
+            <img src={image} alt="sreenshots of projects" />
+            {/**
+          {video ? (
               <video src={video} autoPlay loop poster={image}></video>
             ) : (
               <img src={image} alt="sun" />
             )}
+         */}
           </div>
 
           <div className="single-project-description">
             <h3>Description</h3>
-            <p>{description}</p>
+            <p className="subtitle">{description.subtitle}</p>
+            <div className="description">
+              {description.roles.map((des, i) => (
+                <p className="role" key={i}>
+                  {des.role}
+                </p>
+              ))}
+            </div>
+
             <div className="tec-use">
               <h3>technologies used</h3>
-              <p>{tech_used}</p>
+              <p className="frontend">
+                <span>Front-end:</span>
+                {tech_used.frontend}
+              </p>
+              {tech_used.backend ? (
+                <p className="backend">
+                  <span>Back-end:</span>
+                  {tech_used.backend}
+                </p>
+              ) : (
+                ""
+              )}
             </div>
             <div className="page-btns">
               <a
