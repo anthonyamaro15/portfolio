@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -51,11 +52,11 @@ const Header = () => {
         </div>
       </div>
       <div className={isUserScrolling}>
-        <a href="#top">
+        <Link to="top" smooth={true} duration={1000}>
           <span role="img" aria-label="go to top">
             👆
           </span>
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -27,26 +27,29 @@ const Content = ({ state }) => {
                 <li>CSS/Sass/Less</li>
                 <li>SQL</li>
                 <li>PostgreSQL</li>
+                <li>Data Structures</li>
+                <li>Algorithms</li>
+                <li>Redis</li>
               </ul>
             </div>
             <div className="frameworks shared-width">
               <h3>frameworks</h3>
               <ul>
                 <li>Redux</li>
-                <li>node</li>
+                <li>Node JS</li>
                 <li>Express</li>
               </ul>
             </div>
             <div className="libraries shared-width">
               <h3>libraries</h3>
               <ul>
-                <li>React</li>
+                <li>React JS</li>
 
                 <li>knex JS</li>
                 <li>axios</li>
                 <li>React router</li>
                 <li>Formik</li>
-                <li>React hook forms</li>
+                <li>React Hook Forms</li>
               </ul>
             </div>
             <div className="tools shared-width">
@@ -56,6 +59,8 @@ const Content = ({ state }) => {
                 <li>git & github</li>
                 <li>chrome devTools</li>
                 <li>terminal</li>
+                <li>Nodemailer</li>
+                <li>SendGrid API</li>
               </ul>
             </div>
           </div>
@@ -68,6 +73,3 @@ const Content = ({ state }) => {
 };
 
 export default Content;
-
-// my passion is always learning new technologies while solving problems is my favorite part
-//

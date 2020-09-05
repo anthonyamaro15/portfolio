@@ -70,6 +70,18 @@
       margin-bottom: 2.5rem;
     }
 
+    .subtitle {
+      margin-bottom: 1.5rem;
+    }
+
+    .description {
+      margin-bottom: 2rem;
+
+      .role {
+        margin-bottom: 0.5rem;
+      }
+    }
+
     h3 {
       text-transform: uppercase;
       font-size: 1rem;
@@ -78,11 +90,21 @@
     }
 
     .tec-use {
+      margin-bottom: 2rem;
       h3 {
         margin-bottom: 0.5rem 0;
         color: $blue;
 
         font-size: 1rem;
+      }
+
+      p {
+        margin-bottom: 0.5rem;
+        span {
+          margin-right: 0.5rem;
+
+          color: $white;
+        }
       }
     }
 
