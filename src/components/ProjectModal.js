@@ -71,12 +71,24 @@ export default function AlertDialog({ state, project }) {
             <div className="tec-use">
               <h3>technologies used</h3>
               <p className="frontend">
-                <span>Front-end:</span>
+                <span
+                  style={{
+                    color: `${state ? "#f4f4f4" : "#333"}`,
+                  }}
+                >
+                  Front-end:
+                </span>
                 {tech_used.frontend}
               </p>
               {tech_used.backend ? (
                 <p className="backend">
-                  <span>Back-end:</span>
+                  <span
+                    style={{
+                      color: `${state ? "#f4f4f4" : "#333"}`,
+                    }}
+                  >
+                    Back-end:
+                  </span>
                   {tech_used.backend}
                 </p>
               ) : (
