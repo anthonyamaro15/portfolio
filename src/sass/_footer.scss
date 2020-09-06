@@ -18,6 +18,12 @@
     width: 80%;
   }
 
+  .madeby {
+    @media (max-width: $tablet) {
+      font-size: 0.9rem;
+    }
+  }
+
   nav {
     @media (max-width: $lg-mobile) {
       margin-top: 1rem;
@@ -32,6 +38,10 @@
 
       &:first-child {
         margin-right: 2rem;
+      }
+
+      @media (max-width: $tablet) {
+        font-size: 0.8rem;
       }
     }
   }
