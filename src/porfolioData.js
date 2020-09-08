@@ -21,10 +21,10 @@ export const portfolioData = [
     video: ``,
     description: {
       subtitle:
-        "Gift Solar is a Full Stack application for a company that sells solar panel, and because of COV-19 users are now able to fill applications online and schedule appoinments from the website.",
+        "Gift Solar is a Full Stack application for a company that sells solar panels, and because of COV-19 users are now able to fill applications online and schedule appoinments from the website.",
       roles: [
         {
-          role: "- Designed structure and  wesite to be fully responsive.",
+          role: "- Designed structure and  website to be fully responsive.",
         },
         {
           role:
@@ -32,7 +32,7 @@ export const portfolioData = [
         },
         {
           role:
-            "- Added upload and downdoad functionality for images and pdf files.",
+            "- Added upload and download functionality for images and pdf files.",
         },
         {
           role:
