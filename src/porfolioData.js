@@ -13,6 +13,8 @@ import gameVideo from "./videos/gameoflifeVideo.mov";
 import giftsolar from "./imgs/giftsolar.png";
 import bridges from "./imgs/bridges.png";
 
+import pizza from "./imgs/pizza.png";
+
 // 1423px;
 export const portfolioData = [
   {
@@ -52,6 +54,60 @@ export const portfolioData = [
     site: "https://giftsolar.netlify.app/",
   },
   {
+    name: "TMovies",
+    image: `${tmovieImg}`,
+    video: `${tmovieVideo}`,
+    description: {
+      subtitle:
+        "TMovies is a Full Stack web application that allows users to find the latest/newest/ and watch the movie trailer.",
+      roles: [
+        {
+          role:
+            "- Designed structure and layout of wesite to be fully responsive.",
+        },
+        {
+          role: "- Utilized TMDb API to get movies/tv shows/anime information.",
+        },
+      ],
+    },
+
+    tech_used: {
+      frontend:
+        "React JS | SASS | Redux | axios | React Hook Forms | Progressive Web Applications(PWA).",
+      backend:
+        "Node JS | Express | bcryptjs | jsonwebtoken, PostgreSQL | knex | heroku.",
+    },
+
+    github: "https://github.com/anthonyamaro15/netflix-clone",
+    site: "https://tmovies.netlify.app",
+  },
+  {
+    name: "Lou's Pizza",
+    image: `${pizza}`,
+    video: ``,
+    description: {
+      subtitle:
+        "Lou's Pizza is a clone I built with the purpose of learning TypeScript",
+      roles: [
+        {
+          role: "- Implemented socket.io for real time updates",
+        },
+        {
+          role: "- Created reusable components",
+        },
+      ],
+    },
+
+    tech_used: {
+      frontend: "React JS | TypeScript | SASS | Socket.io",
+      backend:
+        "Node JS | Express | Redis | Socket.io | PostgreSQL | knex | Heroku",
+    },
+
+    github: "https://github.com/anthonyamaro15/pizza-website",
+    site: "https://pizza00.netlify.app/",
+  },
+  {
     name: "Bridges to Prosperity",
     image: `${bridges}`,
     video: ``,
@@ -87,34 +143,6 @@ export const portfolioData = [
     github:
       "https://github.com/Lambda-School-Labs/Labs25-Bridges_to_Prosperity-TeamA-be",
     site: "https://main.dvxfvrn3mdjg1.amplifyapp.com/",
-  },
-  {
-    name: "TMovies",
-    image: `${tmovieImg}`,
-    video: `${tmovieVideo}`,
-    description: {
-      subtitle:
-        "TMovies is a Full Stack web application that allows users to find the latest/newest/ and watch the movie trailer.",
-      roles: [
-        {
-          role:
-            "- Designed structure and layout of wesite to be fully responsive.",
-        },
-        {
-          role: "- Utilized TMDb API to get movies/tv shows/anime information.",
-        },
-      ],
-    },
-
-    tech_used: {
-      frontend:
-        "React JS | SASS | Redux | axios | React Hook Forms | Progressive Web Applications(PWA).",
-      backend:
-        "Node JS | Express | bcryptjs | jsonwebtoken, PostgreSQL | knex | heroku.",
-    },
-
-    github: "https://github.com/anthonyamaro15/netflix-clone",
-    site: "https://tmovies.netlify.app",
   },
   {
     name: "Fitness Anywhere",

@@ -23,6 +23,7 @@ const Content = ({ state }) => {
               <h3>languages</h3>
               <ul>
                 <li>javaScript + (ES6)</li>
+                <li>TypeScript</li>
                 <li>HTML</li>
                 <li>CSS/Sass/Less</li>
                 <li>SQL</li>

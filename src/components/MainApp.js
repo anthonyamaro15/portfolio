@@ -5,7 +5,7 @@ import Content from "./Content";
 import Footer from "./Footer";
 
 const MainApp = () => {
-  const [state, setState] = useState(false);
+  const [state, setState] = useState(true);
 
   useEffect(() => {
     const getState = JSON.parse(localStorage.getItem("state"));
