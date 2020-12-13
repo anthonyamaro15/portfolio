@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
+import GetInTouch from "./GetInTouch";
 
 const MainApp = () => {
   const [state, setState] = useState(true);
@@ -24,6 +25,7 @@ const MainApp = () => {
       <MobileNavbar />
       <Header />
       <Content state={state} />
+      <GetInTouch />
       <Footer />
     </div>
   );
