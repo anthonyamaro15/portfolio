@@ -27,7 +27,6 @@
   .project-title {
     text-transform: uppercase;
     margin: 1rem 0 2rem;
-
     font-size: 0.9rem;
   }
   #img-project {
@@ -116,7 +115,7 @@
       text-transform: uppercase;
       font-size: 1rem;
       margin-bottom: 0.5rem;
-      color: $blue;
+      color: $second-white;
 
       @media (max-width: $tablet) {
         font-size: 0.9rem;
@@ -127,7 +126,7 @@
       margin-bottom: 2rem;
       h3 {
         margin-bottom: 0.5rem 0;
-        color: $blue;
+        color: $second-white;
         font-size: 1rem;
 
         @media (max-width: $tablet) {
@@ -150,9 +149,16 @@
         padding: 0.2rem 1rem;
         font-size: 0.9rem;
         font-weight: lighter;
-        border: 1px solid grey;
+        border: 1px solid $green;
+        color: $green;
         border-radius: 4px;
         text-transform: capitalize;
+
+        transition: background 0.4s ease;
+
+        &:hover {
+          background: rgba(100, 255, 218, 0.1);
+        }
 
         &:first-child {
           margin-right: 0.5rem;
@@ -160,6 +166,7 @@
 
         &:visited {
           color: $dark-white;
+          color: $green;
         }
 
         @media (max-width: $tablet) {
@@ -178,7 +185,7 @@
   button {
     text-transform: capitalize;
     font-weight: 300;
-    border: 1px solid grey;
+    border: 1px solid $green;
     border-radius: 4px;
     font-size: 1rem;
     padding: 0.2rem 1rem;
@@ -186,9 +193,12 @@
     outline: none;
     cursor: pointer;
     color: $dark-white;
+    color: $green;
+
+    transition: background 0.4s ease;
 
     &:hover {
-      background: none;
+      background: rgba(100, 255, 218, 0.2);
     }
 
     @media (max-width: $tablet) {

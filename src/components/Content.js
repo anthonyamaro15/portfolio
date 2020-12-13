@@ -5,7 +5,7 @@ const Content = ({ state }) => {
   return (
     <div className="Content-container" id="about">
       <div className="aboutme-container">
-        <h3 className="title-color">about me</h3>
+        <h3 className="title-color"><span>01.</span>about me</h3>
         <p>
           I've been teaching myself to code since 2018, when I was working a
           full time job working 70+ hrs a week when I decided that I wanted to
@@ -16,7 +16,7 @@ const Content = ({ state }) => {
         </p>
       </div>
       <div className="Content-skills">
-        <h3 className="title-color">skills</h3>
+        <h3 className="title-color"><span>02.</span> skills</h3>
         <div className="skills-container">
           <div className="languages-wrapper">
             <div className="languages shared-width">
