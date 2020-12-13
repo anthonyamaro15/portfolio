@@ -9,7 +9,7 @@ const Content = () => {
         <p>
           I've been teaching myself to code since 2018, when I was working a
           full time job working 70+ hrs a week when I decided that I wanted to
-          change carriers and become a <span> software engineer</span>. Learning
+          change careers and become a <span> software engineer</span>. Learning
           new technologies has always been my passion,{" "}
           <span>solving problems</span> is what I love the most and that is one
           of the reason I decided to join <span>Lambda School</span>.{" "}
