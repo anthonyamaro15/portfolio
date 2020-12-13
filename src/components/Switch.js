@@ -1,6 +1,7 @@
 import React from "react";
 import Switch from "@material-ui/core/Switch";
 
+// Will leave this component for future references
 export default function Switches({ setState, state }) {
   const handleChange = (event) => {
     setState(event.target.checked);

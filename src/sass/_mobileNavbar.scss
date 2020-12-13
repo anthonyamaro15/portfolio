@@ -10,6 +10,7 @@
   transition: all 0.5s ease;
   transform: translate(600px);
   z-index: 100;
+  border: 1px solid blue;
 
   @media (max-width: $med-phone) {
     width: 100%;

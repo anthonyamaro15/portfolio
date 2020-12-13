@@ -8,6 +8,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   overflow: hidden;
+  background: #050e1a;
+  color: $second-white;
 }
 
 a {
@@ -36,41 +38,41 @@ span {
 
   color: $white;
   color: $second-white;
-  a {
-    color: $white;
-  }
+}
+a {
+  color: $white;
+}
 
-  .Header-wrapper {
-    .aboutme {
-      h1 {
-        color: #f5f5f5;
-
-        span {
-          color: $white;
-        }
-      }
-    }
-  }
-
-  .aboutme-container {
-    p {
-      color: #afafbf;
-      color: $darker-white;
+.Header-wrapper {
+  .aboutme {
+    h1 {
+      color: #f5f5f5;
 
       span {
         color: $white;
-        color: $second-white;
       }
     }
   }
+}
 
-  ul {
-    li {
-      color: $darker-white;
+.aboutme-container {
+  p {
+    color: #afafbf;
+    color: $darker-white;
+
+    span {
+      color: $white;
+      color: $second-white;
     }
   }
+}
 
-  footer {
-    color: $dark-white;
+ul {
+  li {
+    color: $darker-white;
   }
+}
+
+footer {
+  color: $dark-white;
 }
