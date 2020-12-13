@@ -1,0 +1,125 @@
+.MobileNavbar {
+  width: 280px;
+  background: rgba(6, 6, 6, 1);
+  background: #172a45;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  transition: all 0.5s ease;
+  transform: translate(600px);
+  z-index: 100;
+
+  @media (max-width: $med-phone) {
+    width: 100%;
+  }
+
+  // add class when click hamburger menu
+  &.show {
+    transform: translate(0px);
+  }
+
+  nav {
+    @include flex(center);
+    flex-direction: column;
+    margin-top: 12rem;
+
+    a {
+      padding: 0.3rem 1.3rem;
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto 2rem;
+      color: $white;
+      font-weight: 300;
+      cursor: pointer;
+
+      span {
+        display: block;
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+        color: $green;
+      }
+    }
+
+    .FormModal {
+      @include flex(center);
+      button {
+        font-size: 0.9rem;
+
+        display: block;
+        text-align: center;
+      }
+    }
+
+    //  .active {
+    //    color: $yellow;
+    //  }
+  }
+}
+
+.burger-menu {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  top: 0.8rem;
+  right: 2rem;
+  transition: transform 0.8s ease;
+  z-index: 120;
+
+  @media (max-width: $laptop) {
+    display: block;
+  }
+
+  @media (max-width: $med-phone) {
+    top: 0.4rem;
+  }
+
+  @media (max-width: $med-phone) {
+    top: 0.2rem;
+  }
+
+  // close mobile navbar when click on hamburger menu
+  &.close {
+    transform: rotate(180deg);
+    transition: all 1s ease;
+
+    .lines {
+      background: $black;
+      background: $white;
+
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+
+  .lines {
+    padding: 2px 4px;
+    padding: 1px 4px;
+    margin: 6px 0;
+    background: #f4f4f4;
+    width: 40px;
+    border-radius: 2px;
+    transition: all 0.7s ease;
+
+    @media (max-width: $med-phone) {
+      padding: 1px 4px;
+    }
+
+    @media (max-width: $galaxy) {
+      width: 34px;
+    }
+  }
+}

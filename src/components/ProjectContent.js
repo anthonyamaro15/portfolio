@@ -4,7 +4,7 @@ import { portfolioData } from "../porfolioData";
 
 const ProjectContent = ({ state }) => {
   return (
-    <div className="ProjectContent">
+    <div className="ProjectContent" id="work">
       <h3 className="title-color">projects</h3>
       <div className="ProjectContent-display">
         {portfolioData.map((project, i) => (

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import MobileNavbar from './MobileNavbar';
 import Navbar from "./Navbar";
 import Header from "./Header";
 import Content from "./Content";
@@ -20,6 +21,7 @@ const MainApp = () => {
   return (
     <div className={state ? "dark-mode" : "Parent-wrapper"}>
       <Navbar setState={setState} state={state} />
+      <MobileNavbar />
       <Header />
       <Content state={state} />
       <Footer />

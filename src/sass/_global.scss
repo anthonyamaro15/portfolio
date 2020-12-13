@@ -34,6 +34,7 @@ span {
   //   background: #031122;
 
   color: $white;
+  color: $second-white;
   a {
     color: $white;
   }
@@ -53,16 +54,18 @@ span {
   .aboutme-container {
     p {
       color: #afafbf;
+      color: $darker-white;
 
       span {
         color: $white;
+        color: $second-white;
       }
     }
   }
 
   ul {
     li {
-      color: $dark-white;
+      color: $darker-white;
     }
   }
 
