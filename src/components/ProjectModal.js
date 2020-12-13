@@ -4,7 +4,7 @@ import Dialog from "@material-ui/core/Dialog";
 
 import SingleProject from "./SingleProject";
 
-export default function AlertDialog({ state, project }) {
+export default function AlertDialog({ project }) {
   const [open, setOpen] = React.useState(false);
   // open === false => darkmode
   const { name, description, github, image, site, tech_used } = project;
@@ -22,9 +22,6 @@ export default function AlertDialog({ state, project }) {
       <div id="ProjectModal-btn">
         <Button
           onClick={handleClickOpen}
-          style={{
-            border: `${state ? "none" : "1px solid rgb(221, 218, 218)"}`,
-          }}
         >
           <SingleProject project={project} />
         </Button>
@@ -39,8 +36,8 @@ export default function AlertDialog({ state, project }) {
         <div
           id="project-info"
           style={{
-            backgroundColor: `${state ? "#050e1a" : ""}`,
-            color: `${state && "#afafbf"}`,
+            backgroundColor: "#050e1a",
+            color: "#afafbf",
           }}
         >
           <div className="project-title">
@@ -71,24 +68,12 @@ export default function AlertDialog({ state, project }) {
             <div className="tec-use">
               <h3>technologies used</h3>
               <p className="frontend">
-                <span
-                  style={{
-                    color: `${state ? "#f4f4f4" : "#333"}`,
-                  }}
-                >
-                  Front-end:
-                </span>
+                <span>Front-end:</span>
                 {tech_used.frontend}
               </p>
               {tech_used.backend ? (
                 <p className="backend">
-                  <span
-                    style={{
-                      color: `${state ? "#f4f4f4" : "#333"}`,
-                    }}
-                  >
-                    Back-end:
-                  </span>
+                  <span>Back-end:</span>
                   {tech_used.backend}
                 </p>
               ) : (
@@ -117,11 +102,10 @@ export default function AlertDialog({ state, project }) {
         <div
           id="btn-close"
           style={{
-            backgroundColor: `${state ? "#050e1a" : ""}`,
+            backgroundColor: "#050e1a",
           }}
         >
           <button
-            className={state ? "dark-mode" : ""}
             onClick={handleClose}
             autoFocus
           >

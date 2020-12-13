@@ -15,7 +15,7 @@ const MobileNavbar = () => {
       window.document.documentElement.style.overflow = "auto";
     }
   }, [isMoblie]);
-  
+
   return (
     <div>
       <div

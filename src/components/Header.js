@@ -25,8 +25,6 @@ const Header = () => {
         <div className="Header-wrapper">
             <span
               className="say-hi"
-              role="img"
-              aria-label="wanted to say hi to whoever visit my webpage"
             >
                Hello, my name is
             </span>
