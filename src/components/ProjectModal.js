@@ -100,14 +100,12 @@ export default function AlertDialog({ state, project }) {
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={state ? "dark-mode" : ""}
               >
                 github
               </a>
               <a
                 href={site}
                 target="_blank"
-                className={state ? "dark-mode" : ""}
                 rel="noopener noreferrer"
               >
                 website

@@ -1,4 +1,7 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -11,14 +14,14 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          linkedin
+          <FaLinkedin />
         </a>
         <a
           href="https://github.com/anthonyamaro15"
           target="_blank"
           rel="noopener noreferrer"
         >
-          github
+          <FaGithub />
         </a>
       </nav>
     </footer>
