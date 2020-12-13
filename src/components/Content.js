@@ -3,7 +3,7 @@ import ProjectContent from "./ProjectContent";
 
 const Content = ({ state }) => {
   return (
-    <div className="Content-container">
+    <div className="Content-container" id="about">
       <div className="aboutme-container">
         <h3 className="title-color">about me</h3>
         <p>

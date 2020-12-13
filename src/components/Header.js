@@ -23,31 +23,25 @@ const Header = () => {
     <div className="wrapper">
       <div className="Header">
         <div className="Header-wrapper">
-          <h1>
-            Hello!{" "}
             <span
+              className="say-hi"
               role="img"
               aria-label="wanted to say hi to whoever visit my webpage"
             >
-              ✋
-            </span>{" "}
-          </h1>
-
+               Hello, my name is
+            </span>
           <div className="aboutme">
-            <h1>
-              My name is <span className="name">anthony amaro</span>, I'm a Full
-              Stack Developer, I spend most of the time doing what I love to do.
-            </h1>
+
+          <h1>Anthony Amaro.</h1>
+          <h1 className="what-ido">Always trying to improve.</h1>
+          <p className="about-description">I'm a software engineer specializing in building exceptional and complex websites based in Las Vegas NV.</p>
+
           </div>
 
           <div className="email-me">
-            <p>
-              Email me
               <a href="mailto:anthonyamaro5555@gmail.com">
-                {" "}
-                <span>anthonyamaro5555@gmail.com</span>
+                Get in touch
               </a>
-            </p>
           </div>
         </div>
       </div>
