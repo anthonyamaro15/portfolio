@@ -32,12 +32,16 @@ const MobileNavbar = () => {
             <span>01.</span>
             About
           </Link>
-          <Link to="work" onClick={toggleMenu} smooth={true} duration={1000} >
+          <Link to="skills" onClick={toggleMenu} smooth={true} duration={1000} >
             <span>02.</span>
+            Skills
+          </Link>
+          <Link to="work" onClick={toggleMenu} smooth={true} duration={1000} >
+            <span>03.</span>
             Work
           </Link>
           <Link to="contact" onClick={toggleMenu} smooth={true} duration={1000} >
-            <span>03.</span>
+            <span>04.</span>
             Contact
           </Link>
         </nav>

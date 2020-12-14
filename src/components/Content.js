@@ -15,7 +15,7 @@ const Content = () => {
           of the reason I decided to join <span>Lambda School</span>.{" "}
         </p>
       </div>
-      <div className="Content-skills">
+      <div className="Content-skills" id="skills">
         <h3 className="title-color"><span>02.</span> skills</h3>
         <div className="skills-container">
           <div className="languages-wrapper">
