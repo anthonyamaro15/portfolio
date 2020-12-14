@@ -28,12 +28,16 @@ const Navbar = () => {
             <span>01.</span>
             about
          </Link>
-         <Link to="work" smooth={true} duration={1000}>
+         <Link to="skills" smooth={true} duration={1000}>
             <span>02.</span>
-            work
+            skills
+         </Link>
+         <Link to="projects" smooth={true} duration={1000}>
+            <span>03.</span>
+            projects
          </Link>
          <Link to="contact" smooth={true} duration={1000}>
-            <span>03.</span>
+            <span>04.</span>
             contact
          </Link>
       </div>
