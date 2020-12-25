@@ -88,13 +88,16 @@ export default function AlertDialog({ project }) {
               >
                 github
               </a>
-              <a
-                href={site}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                website
-              </a>
+              {site ? (
+               <a
+                  href={site}
+                  target="_blank"
+                  rel="noopener noreferrer"
+               >
+                  website
+               </a>
+              ): ""}
+
             </div>
           </div>
         </div>

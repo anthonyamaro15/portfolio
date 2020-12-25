@@ -39,6 +39,8 @@ const Content = () => {
                 <li>Redux</li>
                 <li>Node JS</li>
                 <li>Express</li>
+                <li>Unit test</li>
+                <li>Integration testing</li>
               </ul>
             </div>
             <div className="libraries shared-width">
