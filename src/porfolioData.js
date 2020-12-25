@@ -15,8 +15,42 @@ import bridges from "./imgs/bridges.png";
 
 import pizza from "./imgs/pizza.png";
 
+import mySounds from './imgs/mySounds.png';
+
 // 1423px;
 export const portfolioData = [
+  {
+    name: `MySounds "work in progress"`,
+    image: `${mySounds}`,
+    video: ``,
+    description: {
+      subtitle:
+        "MySounds is a recommendation system design to bring people together by their music preferences involving Spotify API.",
+      roles: [
+        {
+          role: "- Worked with a team of 3, One UX designer, a Software Engineer (me), and a Data Scientist.",
+        },
+        {
+          role:
+            "- Structured and loyout of website to be fully  responsive.",
+        },
+        {
+          role:
+            "- Connected Spotify API for authenticantion and get user music data.",
+        }
+      ],
+    },
+
+    tech_used: {
+      frontend:
+        "React JS | TypeScript | Redux | Socket.io | SASS.",
+      backend:
+        "Node JS | Express | PostgreSQL | knex JS | heroku.",
+    },
+
+    github: "https://github.com/spotify-song",
+    site: "",
+  },
   {
     name: "Gift Solar",
     image: `${giftsolar}`,
@@ -63,7 +97,7 @@ export const portfolioData = [
       roles: [
         {
           role:
-            "- Designed structure and layout of wesite to be fully responsive.",
+            "- Designed structure and layout of website to be fully responsive.",
         },
         {
           role: "- Utilized TMDb API to get movies/tv shows/anime information.",
@@ -175,31 +209,6 @@ export const portfolioData = [
     site: "https://fitness-anywhere.herokuapp.com/",
   },
   {
-    name: "Spotify landing page",
-    image: `${spotify}`,
-    video: `${spotifyVideo}`,
-    description: {
-      subtitle: "Spotify Landing page.",
-      roles: [
-        {
-          role: "- Designed and built Landing page.",
-        },
-        {
-          role:
-            "- Collaborated with a team of 3 Web Developers, 3 Data Scientist to build a fully functional Web application in a week.",
-        },
-      ],
-    },
-
-    tech_used: {
-      frontend: "HTML | LESS | JavaScript",
-      backend: "",
-    },
-
-    github: "https://github.com/Spotify-Song-Suggester-2-BW/FE-repo",
-    site: "https://spotify-song-suggester-2.netlify.app",
-  },
-  {
     name: "Conways Game of Life",
     image: `${gameImg}`,
     video: `${gameVideo}`,
@@ -225,4 +234,29 @@ export const portfolioData = [
     github: "https://github.com/anthonyamaro15/game-of-life-BW",
     site: "https://game-of-life-bw.vercel.app",
   },
+  {
+    name: "Spotify landing page",
+    image: `${spotify}`,
+    video: `${spotifyVideo}`,
+    description: {
+      subtitle: "Spotify Landing page.",
+      roles: [
+        {
+          role: "- Designed and built Landing page.",
+        },
+        {
+          role:
+            "- Collaborated with a team of 3 Web Developers, 3 Data Scientist to build a fully functional Web application in a week.",
+        },
+      ],
+    },
+
+    tech_used: {
+      frontend: "HTML | LESS | JavaScript",
+      backend: "",
+    },
+
+    github: "https://github.com/Spotify-Song-Suggester-2-BW/FE-repo",
+    site: "https://spotify-song-suggester-2.netlify.app",
+  }
 ];
