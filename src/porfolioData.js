@@ -16,6 +16,7 @@ import bridges from "./imgs/bridges.png";
 import pizza from "./imgs/pizza.png";
 
 import mySounds from './imgs/mySounds.png';
+import creditUnion from './imgs/creditunion.png';
 
 // 1423px;
 export const portfolioData = [
@@ -36,7 +37,7 @@ export const portfolioData = [
         },
         {
           role:
-            "- Connected Spotify API for authenticantion and get user music data.",
+            "- Connected Spotify API for authentication and get user music data.",
         }
       ],
     },
@@ -50,6 +51,42 @@ export const portfolioData = [
 
     github: "https://github.com/spotify-song",
     site: "",
+  },
+  {
+    name: "Credit Union",
+    image: `${creditUnion}`,
+    video: ``,
+    description: {
+      subtitle:
+        "The purpose of this project was to sharpen my skills with very complex form validations.",
+      roles: [
+        {
+          role: "- Structured website to be fully responsive.",
+        },
+        {
+          role:
+            "- Created complex forms to take user information with validation.",
+        },
+        {
+          role:
+            "- Created credit card and car loan applictions.",
+        },
+        {
+          role:
+            "- Created server to handle email services after user submits application",
+        },
+      ],
+    },
+
+    tech_used: {
+      frontend:
+        "React JS | TypeScript | Redux | SASS | React Hook Forms.",
+      backend:
+        "Node JS | Express | PostgreSQL | knex JS | heroku | SendGrid.",
+    },
+
+    github: "https://github.com/anthonyamaro15/nv-credit-union",
+    site: "https://nv-credit-union.netlify.app/",
   },
   {
     name: "Gift Solar",
