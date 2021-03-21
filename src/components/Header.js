@@ -16,11 +16,11 @@ const Header = () => {
         setScrolling(false);
       }
     });
-  }, []);
+  }, [scrolling]);
 
   const isUserScrolling = scrolling ? "showHand goup" : "goup";
   return (
-    <div className="wrapper">
+    <div className="wrapper" id="top">
       <div className="Header">
         <div className="Header-wrapper">
             <span
@@ -44,8 +44,10 @@ const Header = () => {
         </div>
       </div>
       <div className={isUserScrolling}>
-        <Link to="top" smooth={true} duration={1000}>
-          <span role="img" aria-label="go to top">
+        <Link to="top" smooth={true} spy={true} duration={1000} onClick={() => {
+           console.log("clicking")
+        }}>
+          <span>
             👆
           </span>
         </Link>
