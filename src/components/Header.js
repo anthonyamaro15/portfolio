@@ -20,7 +20,7 @@ const Header = () => {
 
   const isUserScrolling = scrolling ? "showHand goup" : "goup";
   return (
-    <div className="wrapper">
+    <div className="wrapper" id="top">
       <div className="Header">
         <div className="Header-wrapper">
             <span
@@ -45,7 +45,7 @@ const Header = () => {
       </div>
       <div className={isUserScrolling}>
         <Link to="top" smooth={true} duration={1000}>
-          <span role="img" aria-label="go to top">
+          <span>
             👆
           </span>
         </Link>

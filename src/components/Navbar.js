@@ -22,21 +22,21 @@ const Navbar = () => {
    const isUserScrolling = scrolling ? "Navbar black" : "Navbar";
 
   return (
-    <div className={isUserScrolling} id="top">
+    <div className={isUserScrolling}>
       <div className="nav-links">
-         <Link to="about" smooth={true} duration={1000}>
+         <Link to="about" offset={-80} smooth={true} duration={1000}>
             <span>01.</span>
             about
          </Link>
-         <Link to="skills" smooth={true} duration={1000}>
+         <Link to="skills" offset={-80} smooth={true} duration={1000}>
             <span>02.</span>
             skills
          </Link>
-         <Link to="projects" smooth={true} duration={1000}>
+         <Link to="projects" offset={-80} smooth={true} duration={1000}>
             <span>03.</span>
             projects
          </Link>
-         <Link to="contact" smooth={true} duration={1000}>
+         <Link to="contact" offset={-80} smooth={true} duration={1000}>
             <span>04.</span>
             contact
          </Link>
