@@ -16,7 +16,7 @@ const Header = () => {
         setScrolling(false);
       }
     });
-  }, [scrolling]);
+  }, []);
 
   const isUserScrolling = scrolling ? "showHand goup" : "goup";
   return (
@@ -44,9 +44,7 @@ const Header = () => {
         </div>
       </div>
       <div className={isUserScrolling}>
-        <Link to="top" smooth={true} spy={true} duration={1000} onClick={() => {
-           console.log("clicking")
-        }}>
+        <Link to="top" smooth={true} duration={1000}>
           <span>
             👆
           </span>
